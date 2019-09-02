@@ -69,3 +69,4 @@ console.log(ac.complete('bend'));// expected output: []
 // Feedback:
 // * Correct. Note though, that the time complexity for searching will still be
 //   O(n) if all the words are very similar (sharing a very long common prefix)
+// * The structure used here is called a trie (a tree of string prefixes)
