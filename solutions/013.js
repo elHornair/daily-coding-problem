@@ -7,6 +7,10 @@ function findLongestSubstring(s, k) {
   let maxEnd = 0;
   let distinctLetterCounter = 0;
 
+  if (k === 0) {
+    return '';
+  }
+
   for (let i = 0; i < s.length; i++) {
     if (letterMap[s[i]] === undefined || letterMap[s[i]] === 0) {
       distinctLetterCounter++;
