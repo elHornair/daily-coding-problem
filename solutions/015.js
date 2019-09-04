@@ -1,5 +1,5 @@
 // complexity: O(n) time; O(1) space
-class randomNumberGenerator {
+class RandomNumberGenerator {
  constructor() {
     this.counter = 0;
     this.currentRandomValue = undefined;
@@ -22,7 +22,7 @@ class randomNumberGenerator {
   }
 }
 
-let g = new randomNumberGenerator();
+let g = new RandomNumberGenerator();
 
 // error case
 try {
@@ -45,7 +45,7 @@ for (let i = 0; i < streamLength; i++) {
 }
 
 for (let i = 0; i < sampleSize; i++) {
-  let g = new randomNumberGenerator();
+  let g = new RandomNumberGenerator();
 
   for (let j = 0; j < streamLength; j++) {
     g.feed(j);
