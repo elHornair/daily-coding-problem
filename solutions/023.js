@@ -157,16 +157,8 @@ checkIfCorrect(
 );
 
 
-
-
-
-
 // Feedback:
-// *
-
-// TODO: do a simpler approach (imperative):
-// - explore any allowed direction but pass the pathHistory that you followed so far
-// - if you hit any coord that is in pathHistory; a wall; the edge => abort
-// - if you reach the goal: update a global "bestPathSoFar" (if the found solution is shorter)
-// - Easy improvement: abort if pathHistory gets longer than bestPathSoFar.length
-// - Maybe harder improvement? -> cache
+// * This is DFS (depth first search) whereas the proposed solution used BFS (breadth first search), but it shouldn't
+//   matter, because the complexity is the same
+// * The proposed solution avoids recursion by using a collection of all paths that are to be explored and while-ing
+//   over it
